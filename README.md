@@ -2,7 +2,7 @@
 
 # mockirke
 
-Brings up a mocked RestAPI, from a simple configuration file
+Brings up a mocked RESTful API, from a simple configuration file
 
     $HOME/mapping.json
     [
