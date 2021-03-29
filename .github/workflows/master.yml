@@ -25,3 +25,18 @@ jobs:
       - name: "Maven Verify"
         run: mvn -B clean verify
 
+  docker:
+    name: "Publish Image to DockerHub"
+    runs-on: ubuntu-20.04
+    needs: [test]
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: "Login to Docker Hub"
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: "Build Docker image"
+        run: docker build -t quiquefe/mockirke:latest .
+
+      - name: "Publish Docker image"
+        run: docker push quiquefe/mockirke:latest
