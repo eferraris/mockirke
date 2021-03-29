@@ -1,0 +1,3 @@
+mockerke:
+  mapping:
+    path: ${HOME}/mapping.json
