@@ -1,3 +1,5 @@
+[![master](https://github.com/eferraris/mockirke/actions/workflows/master.yml/badge.svg)](https://github.com/eferraris/mockirke/actions/workflows/master.yml)
+
 # mockirke
 
 Brings up a mocked RestAPI, from a simple configuration file
