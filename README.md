@@ -28,4 +28,8 @@ Brings up a mocked RESTful API, from a simple configuration file
             }
         }
     ]
-    
+
+
+## Docker
+    docker run -d -p 8080:8080 -v ./mapping.json:/root/mapping.json quiquefe/mockirke
+        
